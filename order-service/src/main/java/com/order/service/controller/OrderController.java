@@ -5,7 +5,9 @@ import com.order.service.proxy.PaymentServiceProxy;
 import com.order.service.repository.OrderRepository;
 import com.payment.service.model.PaymentValueObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class OrderController {
