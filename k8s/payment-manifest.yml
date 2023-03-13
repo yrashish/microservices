@@ -35,4 +35,4 @@ spec:
   selector:
     app.kubernetes.io/name: payment-service
     app.kubernetes.io/version: 0.0.1-SNAPSHOT
-  type: LoadBalancer
+  type: ClusterIP
