@@ -28,7 +28,6 @@ public class OrderController {
         paymentValueObject.setPaymentStatus("pending");
         PaymentValueObject savedPaymentValueObject = paymentServiceProxy.processPayment(paymentValueObject);
 
-        savedOrderValueObject.setPaymentStatus(savedPaymentValueObject.getPaymentStatus());
         return orderRepository.save(savedOrderValueObject);
     }
 
